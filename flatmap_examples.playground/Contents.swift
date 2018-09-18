@@ -8,7 +8,7 @@ let flattened = numbers.joined()
 let flattened2 = Array(numbers.joined())
 print(flattened2)
 
-let flattened3 = numbers.compactMap { $0 }
+let flattened3 = numbers.flatMap { $0 }
 flattened3
 
 

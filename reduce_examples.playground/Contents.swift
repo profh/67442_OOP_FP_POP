@@ -24,31 +24,11 @@ print(count2)
 ////*** EXERCISE ***//
 // Using reduce(), find the number of names that are less than 5 characters
 
+let countNames = names.reduce(0) { $1.count < 5 ? $0 + 1 : $0 }
+countNames
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//let jordan = names.filter{$0.count < 5}.count
-//jordan
-//
-//let mouniraSivan = names.reduce(0){ $0 + ($1.count < 5 ? 1 : 0) }
-//mouniraSivan
-
+let altCountNames = names.reduce(0){ $0 + ($1.count < 5 ? 1 : 0) }
+altCountNames
 
 
 
